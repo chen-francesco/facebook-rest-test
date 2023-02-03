@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Foo } from './foo.model';
@@ -16,7 +16,7 @@ export class FooComponent {
   oFoo : Observable<Foo[]>;
 
   constructor(public http: HttpClient) {
-
+    
   }
 
   makeRequest(): void {
